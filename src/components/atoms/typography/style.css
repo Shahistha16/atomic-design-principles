@@ -1,0 +1,42 @@
+.text-xx-small {
+  font-size: 12px;
+}
+.text-x-small {
+  font-size: 13px;
+}
+.text-small {
+  font-size: 14px;
+}
+.text-medium {
+  font-size: 17px;
+}
+.text-large {
+  font-size: 21px;
+}
+.text-x-large {
+  font-size: 30px;
+}
+.text-xx-small_bold {
+  font-size: 12px;
+  font-weight: bold;
+}
+.text-x-small_bold {
+  font-size: 13px;
+  font-weight: bold;
+}
+.text-small_bold {
+  font-size: 14px;
+  font-weight: bold;
+}
+.text-medium_bold {
+  font-size: 17px;
+  font-weight: bold;
+}
+.text-large_bold {
+  font-size: 21px;
+  font-weight: bold;
+}
+.text-x-large_bold {
+  font-size: 30px;
+  font-weight: bold;
+}
