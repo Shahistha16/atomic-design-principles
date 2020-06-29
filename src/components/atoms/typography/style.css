@@ -1,42 +1,32 @@
-.text-xx-small {
+.text-wrapper {
+  margin: 0;
+  line-height: 1.4;
+  color: #fff;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+}
+.text-base {
   font-size: 12px;
 }
-.text-x-small {
+.text-h1 {
   font-size: 13px;
 }
-.text-small {
+.text-h2 {
   font-size: 14px;
 }
-.text-medium {
+.text-h3 {
   font-size: 17px;
 }
-.text-large {
+.text-h4 {
   font-size: 21px;
 }
-.text-x-large {
+.text-h5 {
   font-size: 30px;
 }
-.text-xx-small_bold {
-  font-size: 12px;
-  font-weight: bold;
+.text-normal {
+  font-weight: 500;
 }
-.text-x-small_bold {
-  font-size: 13px;
-  font-weight: bold;
-}
-.text-small_bold {
-  font-size: 14px;
-  font-weight: bold;
-}
-.text-medium_bold {
-  font-size: 17px;
-  font-weight: bold;
-}
-.text-large_bold {
-  font-size: 21px;
-  font-weight: bold;
-}
-.text-x-large_bold {
-  font-size: 30px;
-  font-weight: bold;
+.text-bold {
+  font-weight: 900;
 }
