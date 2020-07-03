@@ -1,9 +1,9 @@
 import * as React from 'react'
-import './style.css'
+import styles from './style.css'
 
 const TextBox = () => (
   <div>
-    <input className="textbox-view" type="text" />
+    <input className={styles.textboxView} type="text" />
   </div>
 )
 

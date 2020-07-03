@@ -1,12 +1,26 @@
 /* @flow */
 import * as React from 'react'
 import TopHeader from './components/organisms/topHeader'
-// import Home from './components/pages/home'
+import SubHeader from './components/organisms/subHeader'
+import KindleHeader from './components/organisms/kindleHeader'
+import styles from './components/_settings/_base.css'
+import EReaderBooks from './components/organisms/eReaderBooks'
+import KindleDescription from './components/molecules/kindleDescription'
+import RelatedComponent from './components/organisms/relatedComponent'
 
 const App = () => (
-  <div style={{}}>
+  <div>
     <TopHeader />
-    <p>sdfgfh</p>
+    <SubHeader />
+    <KindleHeader />
+    <div className={styles.bodyView}>
+      <div className={styles.filterView}></div>
+      <div className={styles.diaplayView}>
+        <EReaderBooks />
+        <KindleDescription />
+      </div>
+    </div>
+    <RelatedComponent />
   </div>
 )
 

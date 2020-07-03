@@ -1,10 +1,34 @@
-.searchBar-View{
+.searchBarView {
   display: flex;
-  /* flex-direction: row; */
-  border: 0.5px grey;
+  flex-direction: row;
+  border: 1px solid #494c51;
+  width: 1174px;
+  height: 39px;
+  border-radius: 5px;
 }
-.text-button{
-  width: 10%;
-  justify-content: center;
-  align-items: center;
+.buttonView {
+  width: 99px;
+  height: 38px;
+  border-radius: 5px 0px 0px 5px;
+}
+.textButton {
+  color: #585858;
+  font-size: 12px;
+}
+.imageView {
+  width: 45px;
+  height: 38px;
+  justify-content: end;
+  align-self: flex-end;
+  align-content: flex-end;
+}
+.textBoxView {
+}
+.searchView {
+  width: 45px;
+  height: 38px;
+  background-color: #febd68;
+  border-radius: 0px 5px 5px 0px;
+  /* margin-top: -1px; */
+  /* padding-top: 2px; */
 }

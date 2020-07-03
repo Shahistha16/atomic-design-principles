@@ -1,0 +1,14 @@
+.border {
+  border: 0.5px solid #dddddd;
+  margin: 5px 0px 5px 0px;
+}
+.paraText {
+  font-size: 13px;
+  color: #111111;
+}
+h4 {
+  margin-bottom: 0;
+}
+h5 {
+  margin-bottom: 0;
+}

@@ -4,14 +4,6 @@
   -webkit-appearance: none;
   border: 0;
   outline: 0;
-  display: block;
-  font-family: var(--base-font-family);
-  font-size: 0.9em;
-  font-weight: 600;
-  text-transform: uppercase;
-  border-radius: 3px;
-  cursor: pointer;
-  position: relative;
 }
 
 .buttonText {
@@ -52,6 +44,7 @@
   /* &:hover {
     color: #fff;
     background: var(--brand);
+    border: 1px solid grey;
   } */
 }
 

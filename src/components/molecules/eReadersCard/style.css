@@ -1,0 +1,46 @@
+.cardView {
+  /* display: flex; */
+  width: 160px;
+  padding: 15px;
+}
+.titleView {
+  /* width: 170px; */
+  /* height: 39px; */
+  display: inline-block;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  color: #111111;
+  font-size: 13px;
+  font-weight: 700;
+}
+.siteName {
+  font-size: 13px;
+  color: #555555;
+}
+.costView {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+.rupeesSymbol {
+  font-size: 12px;
+  color: #111111;
+  padding-top: 2px;
+}
+.rupees {
+  font-size: 21px;
+  color: #111111;
+}
+.paisa {
+  font-size: 12px;
+  color: #111111;
+  padding-top: 4px;
+}
+.ratingView {
+  display: flex;
+  flex-wrap: wrap;
+}
+.h5 {
+  display: block;
+}

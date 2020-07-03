@@ -1,5 +1,8 @@
-.textbox-view {
-  width: 320px;
-  height: 50px;
-  padding: 7px, 10px, 10px, 0px;
+.textboxView {
+  width: 1034px;
+  padding:3px 0px 5px 0px;
+  /* padding: 7px, 10px, 10px, 0px; */
+  font-size: 24px;
+  border:1px solid #fff;
+  outline: none;
 }

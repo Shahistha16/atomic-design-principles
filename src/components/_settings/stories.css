@@ -1,6 +1,6 @@
-@import './_variables.css';
+@import "./_variables.css";
 
-.--brand:before {
+/* .--brand:before {
   content: '';
   display: inline-block;
   width: 15px;
@@ -107,4 +107,4 @@
 .--headers-font-family {
   font-family: var(--headers-font-family);
 }
-
+ */

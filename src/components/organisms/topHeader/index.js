@@ -5,12 +5,31 @@ import Button from '../../atoms/button'
 import SearchBar from '../../molecules/searchBar'
 // import Text from '../../atoms/text'
 import styles from './style.css'
-import amazonLogo from '../../assets/images/amazonLogo.jpg'
+import Images from '../../assets/images'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faCartPlus } from '@fortawesome/free-solid-svg-icons'
+import Strings from '../../assets/strings'
+import TextComponent from '../../molecules/textComponent.js'
 
 const TopHeader = () => {
   return (
     <div className={styles.topheaderView}>
-      <Image src={amazonLogo} width="100px" height="50px" alt="" />
+      <Button className={styles.menuView}>
+        <FontAwesomeIcon icon={faBars} color="white" />
+      </Button>
+      <div className={styles.logoView}>
+        <Image src={Images.logo} width="140px" height="40px" alt="" />
+      </div>
+      <SearchBar />
+      <Button className={styles.menuView} color="white">
+        <Image src={Images.flag} width="24px" height="18px" alt="" />
+      </Button>
+      <TextComponent upperText={Strings.helloSignIn} lowerText={Strings.accountsLists} />
+      <TextComponent upperText={Strings.returns} lowerText={Strings.orders} />
+      <TextComponent upperText={Strings.try} lowerText={Strings.prime} />
+      <Button className={styles.cartView}>
+        <FontAwesomeIcon icon={faCartPlus} color="white" />
+      </Button>
     </div>
   )
 }

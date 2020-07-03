@@ -1,0 +1,19 @@
+.text_view {
+  display: flex;
+  background-color: #131921;
+  padding-left: 10px;
+}
+
+.upper_text {
+  color: #7b7d7f;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 9px 0px 0px;
+  padding: 0px 9px 0px 0px;
+}
+.lower_text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 9px 5px 0px;
+}

@@ -1,0 +1,72 @@
+h1 {
+  color: #e47811;
+  line-height: 0px;
+  padding-bottom: 20px;
+}
+h2 {
+  color: #000000;
+  line-height: 0px;
+  padding-top: 20px;
+}
+.borderDiv {
+  border: 0.5px solid #e7e7e7;
+  width: 100%;
+}
+.horizontalView {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 20px;
+}
+.boxView {
+  height: 39px;
+  display: flex;
+  border-top: 0.5px solid #ccc;
+  border-bottom: 0.5px solid #ccc;
+  align-items: center;
+  justify-content: space-between;
+}
+.verticleView {
+  /* display: flex; */
+}
+.results {
+  color: #101010;
+  font-size: 13px;
+}
+.store {
+  color: #c45500;
+  font-size: 13px;
+  font-weight: bold;
+}
+.pageHeader {
+  height: 36px;
+  background-color: #eeeeee;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.previous {
+  font-size: 16px;
+  color: #555555;
+  font-weight: 600;
+  padding-left: 25px;
+}
+.page {
+  font-size: 16px;
+  color: #555555;
+  font-weight: bold;
+  padding-left: 25px;
+}
+.lastPage {
+  font-size: 16px;
+  color: #0265c0;
+  font-weight: 600;
+}
+.next {
+  font-size: 16px;
+  color: #0265c0;
+  font-weight: bold;
+  padding-left: 25px;
+  padding-right: 25px;
+}
