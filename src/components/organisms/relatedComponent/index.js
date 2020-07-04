@@ -1,8 +1,9 @@
 import React from 'react'
-import { HeaderSix, Title } from '../../atoms/typography'
+import { HeaderSix, Title, HeaderFour, HeaderFive } from '../../atoms/typography'
 import Strings from '../../assets/strings'
 import styles from './styles.css'
 import BestSellerCard from '../../molecules/bestSellerCard'
+import Image from '../../atoms/image'
 
 const RelatedComponent = () => {
   return (
@@ -221,6 +222,57 @@ const RelatedComponent = () => {
         />
       </div>
       <div className={styles.border} />
+      <div className={styles.historyView}>
+        <Title textLabel={Strings.browsingHistory} />
+        <HeaderFive textLabel={Strings.viewEditBrowsingHistory} />
+      </div>
+      <div className={styles.historyImgs}>
+        <div className={styles.imgView}>
+          <Image
+            src={
+              'https://images-eu.ssl-images-amazon.com/images/I/61CFdAd2H%2BL._AC_UL100_SR100,100_.jpg'
+            }
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div className={styles.imgView}>
+          <Image
+            src={
+              'https://images-eu.ssl-images-amazon.com/images/I/51RJF1V23zL._AC_UL100_SR100,100_.jpg'
+            }
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div className={styles.imgView}>
+          <Image
+            src={
+              'https://images-eu.ssl-images-amazon.com/images/I/61NjJ4LjFFL._AC_UL100_SR100,100_.jpg'
+            }
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div className={styles.imgView}>
+          <Image
+            src={
+              'https://images-eu.ssl-images-amazon.com/images/I/41aTw6F6DDL._AC_UL100_SR100,100_.jpg'
+            }
+            width="100px"
+            height="100px"
+          />
+        </div>
+        <div className={styles.imgView}>
+          <Image
+            src={
+              'https://images-eu.ssl-images-amazon.com/images/I/41mbntaO--L._AC_UL100_SR100,100_.jpg'
+            }
+            width="100px"
+            height="100px"
+          />
+        </div>
+      </div>
     </div>
   )
 }

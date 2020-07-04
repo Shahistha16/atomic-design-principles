@@ -7,6 +7,7 @@ import styles from './components/_settings/_base.css'
 import EReaderBooks from './components/organisms/eReaderBooks'
 import KindleDescription from './components/molecules/kindleDescription'
 import RelatedComponent from './components/organisms/relatedComponent'
+import Footer from './components/organisms/footer'
 
 const App = () => (
   <div>
@@ -21,6 +22,7 @@ const App = () => (
       </div>
     </div>
     <RelatedComponent />
+    <Footer />
   </div>
 )
 

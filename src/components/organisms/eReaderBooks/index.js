@@ -7,8 +7,11 @@ import StoreCard from '../../molecules/storeCard'
 import DropDown from '../../atoms/dropDown'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import options from '../../constants'
+import Pagination from 'react-js-pagination'
+import ReactPaginate from 'react-paginate'
 
-const EReaderBooks = () => {
+const EReaderBooks = ({ onChange }) => {
   return (
     <div>
       <Header textLabel={Strings.kindleStore} />
@@ -49,7 +52,7 @@ const EReaderBooks = () => {
           {Strings.results}
           <span className={styles.store}>{Strings.kindlestore}</span>
         </div>
-        <DropDown />
+        <DropDown option={options} label={'Sort by'} />
       </div>
       <div className={styles.verticleView}>
         <StoreCard
@@ -95,17 +98,24 @@ const EReaderBooks = () => {
           rating={4}
         />
       </div>
-      <div className={styles.pageHeader}>
-        <FontAwesomeIcon icon={faChevronLeft} color="#888" />
-        <div className={styles.previous}>
-          Previous Page <span className={styles.page}>1 </span>
-          <span className={styles.lastPage}>2 3 ... </span>
-          <span>400 </span>
-          <span className={styles.next}>Next Page</span>
-        </div>
-        <FontAwesomeIcon icon={faChevronRight} color="#0265c0" />
-      </div>
+      <ReactPaginate
+        previousLabel={'< previous    '}
+        nextLabel={'   next >'}
+        breakLabel={' ... '}
+        breakClassName={styles.breakClassName}
+        pageCount={400}
+        marginPagesDisplayed={1}
+        pageRangeDisplayed={1}
+        onPageChange={onChange}
+        containerClassName={styles.pagination}
+        subContainerClassName={styles.pagesPagination}
+        activeClassName={styles.activeClassName}
+        initialPage={1}
+        previousClassName={styles.previousClassName}
+        nextClassName={styles.nextClassName}
+      />
     </div>
+    // </div>
   )
 }
 
