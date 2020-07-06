@@ -8,8 +8,7 @@ import DropDown from '../../atoms/dropDown'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import options from '../../constants'
-import Pagination from 'react-js-pagination'
-import ReactPaginate from 'react-paginate'
+import Pagination from '../../molecules/pagination'
 
 const EReaderBooks = ({ onChange }) => {
   return (
@@ -98,22 +97,7 @@ const EReaderBooks = ({ onChange }) => {
           rating={4}
         />
       </div>
-      <ReactPaginate
-        previousLabel={'< previous    '}
-        nextLabel={'   next >'}
-        breakLabel={' ... '}
-        breakClassName={styles.breakClassName}
-        pageCount={400}
-        marginPagesDisplayed={1}
-        pageRangeDisplayed={1}
-        onPageChange={onChange}
-        containerClassName={styles.pagination}
-        subContainerClassName={styles.pagesPagination}
-        activeClassName={styles.activeClassName}
-        initialPage={1}
-        previousClassName={styles.previousClassName}
-        nextClassName={styles.nextClassName}
-      />
+      <Pagination />
     </div>
     // </div>
   )
