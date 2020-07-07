@@ -6,4 +6,9 @@ const option = [
   'Publication date',
 ]
 
-export default option
+const kindleUnlimited = [{ name: 'Kindle Unlimited Eligible', value: 'Kindle Unlimited' }]
+const primeReading = [{ name: 'Prime Reading Eligible', value: 'Prime Reading' }]
+const wordWise = [{ name: 'Word Wise Enabled', value: 'Word Wise' }]
+const Deals = [{ name: 'Today`s Deals', value: 'Deals' }]
+
+export { option, kindleUnlimited, primeReading, wordWise, Deals }

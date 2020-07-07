@@ -7,7 +7,7 @@ import StoreCard from '../../molecules/storeCard'
 import DropDown from '../../atoms/dropDown'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import options from '../../constants'
+import { option } from '../../constants'
 import Pagination from '../../molecules/pagination'
 
 const EReaderBooks = ({ onChange }) => {
@@ -19,7 +19,7 @@ const EReaderBooks = ({ onChange }) => {
       <div className={styles.horizontalView}>
         <EReadersCard
           src={'https://images-eu.ssl-images-amazon.com/images/I/41aTw6F6DDL._AC_SX184_.jpg'}
-          rating={4}
+          rating={3}
         />
         <EReadersCard
           src={'https://images-eu.ssl-images-amazon.com/images/I/41FW4mTXMhL._AC_SX184_.jpg'}
@@ -31,11 +31,11 @@ const EReaderBooks = ({ onChange }) => {
         />
         <EReadersCard
           src={'https://images-eu.ssl-images-amazon.com/images/I/41FW4mTXMhL._AC_SX184_.jpg'}
-          rating={4.5}
+          rating={3.5}
         />
         <EReadersCard
           src={'https://images-eu.ssl-images-amazon.com/images/I/41aTw6F6DDL._AC_SX184_.jpg'}
-          rating={4}
+          rating={3}
         />
         <EReadersCard
           src={'https://images-eu.ssl-images-amazon.com/images/I/41FW4mTXMhL._AC_SX184_.jpg'}
@@ -51,7 +51,7 @@ const EReaderBooks = ({ onChange }) => {
           {Strings.results}
           <span className={styles.store}>{Strings.kindlestore}</span>
         </div>
-        <DropDown option={options} label={'Sort by'} />
+        <DropDown option={option} label={'Sort by'} />
       </div>
       <div className={styles.verticleView}>
         <StoreCard
@@ -72,7 +72,7 @@ const EReaderBooks = ({ onChange }) => {
           src={'https://images-eu.ssl-images-amazon.com/images/I/41-G7AIOZyL._AC_US218_.jpg'}
           author={Strings.author}
           title={Strings.bookName}
-          rating={3.5}
+          rating={3}
         />
         <StoreCard
           src={
@@ -94,10 +94,10 @@ const EReaderBooks = ({ onChange }) => {
           }
           author={'Swami Vivekanand'}
           title={'Inspiring Thoughts'}
-          rating={4}
+          rating={4.5}
         />
       </div>
-      <Pagination />
+      <Pagination pagecount={400} />
     </div>
     // </div>
   )

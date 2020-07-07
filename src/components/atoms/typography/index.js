@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './style.css'
 
-import classnames from 'classnames'
-
 const Typography = ({
   fontSize = 'base',
   fontWeight = 'normal',
@@ -10,9 +8,9 @@ const Typography = ({
   textLabel,
   className,
 }) => {
-  let fontSizeClass = styles[`text_${fontSize}`]
-  let fontWeightClass = styles[`text_${fontWeight}`]
-  let fontColorClass = styles[`text_${fontColor}`]
+  let fontSizeClass = `${styles[`text_${fontSize}`]}`
+  let fontWeightClass = `${styles[`text_${fontWeight}`]}`
+  let fontColorClass = `${styles[`text_${fontColor}`]}`
   let fontClass = `${fontSizeClass} ${fontWeightClass} ${fontColorClass} ${className}`
   return <div className={fontClass}>{textLabel}</div>
 }

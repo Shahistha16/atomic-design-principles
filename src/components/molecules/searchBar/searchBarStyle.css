@@ -22,7 +22,9 @@
   align-self: flex-end;
   align-content: flex-end;
 }
-.textBoxView {
+.textBox {
+  width: 1034px;
+    outline: none;
 }
 .searchView {
   width: 45px;

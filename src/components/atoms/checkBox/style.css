@@ -1,0 +1,9 @@
+.view {
+  align-items: center;
+}
+.text {
+  padding-top: 3px;
+  font-size: 12px;
+  color: #111111;
+  font-weight: 800;
+}

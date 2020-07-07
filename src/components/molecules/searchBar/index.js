@@ -8,7 +8,7 @@ import Button from '../../atoms/button'
 import TextBox from '../../atoms/textBox'
 import styles from './searchBarStyle.css'
 
-const SearchBar = className => {
+const SearchBar = ({ className }) => {
   const onClick = () => {}
   return (
     <div className={styles.searchBarView}>
@@ -16,7 +16,7 @@ const SearchBar = className => {
         <div className={styles.textButton}>{Strings.kindleStore}</div>
       </Button>
       <div className={styles.textBoxView}>
-        <TextBox />
+        <TextBox className={styles.textBox} />
       </div>
       <div className={styles.imageView}>
         <Button className={styles.searchView}>

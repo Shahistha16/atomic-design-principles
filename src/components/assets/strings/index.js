@@ -46,7 +46,6 @@ const Strings = {
   ratingCount: '(2093)',
 
   results: '1-16 of over 90,000 results for',
-  kindlestore: 'Kindle Store',
   sortBy: 'Sort by',
 
   bookName:
@@ -120,6 +119,38 @@ const Strings = {
   unitedArabEmirates: 'United Arab Emirates',
   unitedKingdom: 'United Kingdom',
   unitedStates: 'United States',
+
+  showResultsfor: 'Show results for',
+  kindleeBooks: 'Kindle eBooks',
+  refinebBy: 'Refine by',
+  newArrivals: 'New Arrivals',
+  Last30days: 'Last 30 days',
+  Last90days: 'Last 90 days',
+  comingSoon: 'Coming Soon',
+  kindleUnlimited: 'Kindle Unlimited',
+  kindleUnlimitedEligible: 'Kindle Unlimited Eligible',
+  primeReading: 'Prime Reading',
+  primeReadingEligible: 'Prime Reading Eligible',
+  wordWise: 'Word Wise',
+  wordWiseEnabled: 'Word Wise Enabled',
+  avgCustomerReview: 'Avg. Customer Review',
+  andUp: ' & Up',
+  Price: 'Price',
+  Under50: 'Under ₹50',
+  R50_100: '₹50 - 100',
+  R100_200: '₹100 - 200',
+  R200_500: '₹200 - 500',
+  R500_Above: '₹500 & Above',
+  Min: '₹ Min',
+  Max: '₹ Max',
+  Go: 'Go',
+  Deals: 'Deals',
+  TodaysDeals: 'Today`s Deals',
+  Discount: 'Discount',
+  OffOrMore10: '10% Off or more',
+  OffOrMore25: '25% Off or more',
+  OffOrMore35: '35% Off or more',
+  OffOrMore50: '50% Off or more',
 }
 
 export default Strings

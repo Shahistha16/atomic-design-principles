@@ -1,0 +1,67 @@
+.filterView {
+  border-right: 1px solid #dddddd;
+  margin: 0px 5px 0px 5px;
+  padding: 10px;
+}
+.header {
+  color: #767676;
+}
+.subHeader {
+  color: black;
+}
+.subHeader:hover {
+  text-decoration: none;
+}
+.text {
+  padding-top: 3px;
+  font-size: 12px;
+  color: #111111;
+  font-weight: 800;
+}
+.text:hover {
+  color: #c45500;
+}
+.paddingLeft {
+  padding-left: 20px;
+}
+.border {
+  border: 0.5px solid #dddddd;
+  margin-top: 20px;
+}
+.ratingView {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.checkBoxView {
+  align-items: center;
+}
+.boxView {
+  width: 38px;
+  height: 23px;
+  border: 0.5px solid #adb1b8;
+  border-radius: 3px;
+  margin-right: 10px;
+  outline: none;
+  font-size: 12px;
+  padding-left: 3px;
+}
+.priceRangeView {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+.buttonView {
+  width: 30px;
+  height: 35px;
+  border: 0.1px solid #adb1b8;
+  border-radius: 3px;
+  background-color: #f4f5f7;
+}
+.buttonView:hover {
+  background-color: lightgray;
+}
+.buttonText {
+  font-size: 12px;
+  color: #858587;
+}

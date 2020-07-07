@@ -8,6 +8,7 @@ import EReaderBooks from './components/organisms/eReaderBooks'
 import KindleDescription from './components/molecules/kindleDescription'
 import RelatedComponent from './components/organisms/relatedComponent'
 import Footer from './components/organisms/footer'
+import FilterColumn from './components/organisms/filterColumn'
 
 const App = () => (
   <div>
@@ -15,7 +16,9 @@ const App = () => (
     <SubHeader />
     <KindleHeader />
     <div className={styles.bodyView}>
-      <div className={styles.filterView}></div>
+      <div className={styles.filterView}>
+        <FilterColumn />
+      </div>
       <div className={styles.diaplayView}>
         <EReaderBooks />
         <KindleDescription />

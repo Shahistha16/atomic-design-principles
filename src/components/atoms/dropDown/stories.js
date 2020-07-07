@@ -1,11 +1,11 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import options from '../../constants'
+import { option } from '../../constants'
 
 import DropDown from './index'
 
 storiesOf('Atoms', module).add('DropDown', () => (
   <div style={{ padding: 10 }}>
-    <DropDown option={options} label={'Sort by'} />
+    <DropDown option={option} label={'Sort by'} />
   </div>
 ))
