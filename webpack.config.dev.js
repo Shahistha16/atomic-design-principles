@@ -3,15 +3,21 @@ const path = require('path')
 const webpack = require('webpack') // eslint-disable-line import/no-extraneous-dependencies
 const ExtractTextPlugin = require('extract-text-webpack-plugin') // eslint-disable-line import/no-extraneous-dependencies
 
-const resolve = require('./webpack/resolve.js')
+// const resolve = require('./webpack/resolve.js')
 
 module.exports = {
   devtool: 'cheap-module-eval-source-map',
-  entry: ['webpack-hot-middleware/client', './src/index'],
+  entry: {
+    index: ['./src/index', 'webpack-hot-middleware/client'],
+  },
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/static/',
+  },
+  resolve: {
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
@@ -22,9 +28,12 @@ module.exports = {
     }),
     new ExtractTextPlugin('styles.css'),
   ],
-  resolve,
   module: {
     rules: [
+      {
+        test: /\.(ts|tsx)$/,
+        loader: 'ts-loader',
+      },
       {
         test: /\.js$/,
         loader: 'babel-loader',

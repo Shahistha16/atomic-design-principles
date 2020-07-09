@@ -8,7 +8,16 @@
 }
 h4 {
   margin-bottom: 0;
+  color: #000
 }
 h5 {
   margin-bottom: 0;
+  color: #000
+}
+.header{
+  color: #000;
+}
+
+.subHeader{
+  color: #000
 }
