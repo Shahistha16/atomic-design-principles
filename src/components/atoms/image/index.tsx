@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Interface } from 'readline'
 
 export interface imageInterface {
-  src: any;
+  src: string;
   alt: string;
   width?: string;
   height?: string;

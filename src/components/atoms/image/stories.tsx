@@ -1,11 +1,11 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
+import React from "react";
+import { storiesOf } from "@storybook/react";
 
-import Image from './index'
-import Images from '../../assets/images'
+import Image from "./index";
+import logo from "../../assets/images/amazonLogo.jpg";
 
-storiesOf('Atoms', module).add('image', () => (
+storiesOf("Atoms", module).add("image", () => (
   <div style={{ padding: 10 }}>
-    <Image src={Images.logo} alt="" width="20" height="20" />
+    <Image src={logo} alt="" width="20" height="20" />
   </div>
-))
+));

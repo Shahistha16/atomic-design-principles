@@ -3,10 +3,10 @@ import styles from './style.css'
 import Button from '../../atoms/button'
 import { Text, HeaderFour } from '../../atoms/typography'
 import Strings from '../../assets/strings'
-import Images from '../../assets/images'
 import Image from '../../atoms/image'
 import { faGlobe } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo from '../../assets/images/amazonLogo.jpg'
 
 const Footer = () => {
   const scrollTop = () => {
@@ -107,7 +107,7 @@ const Footer = () => {
         <div className={styles.border} />
         <div className={styles.langContainer}>
           <div className={styles.imgView}>
-            <Image src={Images.logo} width="76px" height="25px" alt="" />
+            <Image src={logo} width="76px" height="25px" alt="" />
           </div>
           <div className={styles.langView}>
             <FontAwesomeIcon icon={faGlobe} color="#ffffff" />

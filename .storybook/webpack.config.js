@@ -1,11 +1,17 @@
 const resolve = require('../webpack/resolve.js')
+const path = require('path')
 
 module.exports = {
   resolve: {
-    alias: resolve.alias,
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
   module: {
     rules: [
+      {
+        test: /\.(ts|tsx)$/,
+        loader: 'ts-loader',
+      },
       {
         test: /\.svg$/,
         use: [
@@ -54,6 +60,10 @@ module.exports = {
             loader: 'postcss-loader',
           },
         ],
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|mp3|svg)$/,
+        loaders: ['file-loader'],
       },
     ],
   },
