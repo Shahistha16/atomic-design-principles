@@ -1,3 +1,13 @@
-.home-view {
-  /* display: flex; */
+.bodyView {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.filterView {
+  width: 15%;
+}
+.diaplayView {
+  width: 85%;
+  /* display: flex;
+  flex-wrap: wrap; */
 }

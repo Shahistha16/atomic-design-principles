@@ -10,7 +10,7 @@ import styles from "./styles.css";
 import BestSellerCard from "../../molecules/bestSellerCard";
 import Image from "../../atoms/image";
 
-const RelatedComponent = () => {
+const RelatedBooks = () => {
   return (
     <div className={styles.view}>
       <div className={styles.border} />
@@ -258,4 +258,4 @@ const RelatedComponent = () => {
   );
 };
 
-export default RelatedComponent;
+export default RelatedBooks;
